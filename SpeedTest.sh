@@ -1,1 +1,1 @@
-speedtest-cli --csv >> ~/speedtest.csv
+* */6 * * * ~/Speed.sh

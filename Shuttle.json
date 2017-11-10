@@ -1,0 +1,75 @@
+{
+	"_comments": [
+		"Valid terminals include: 'Terminal.app' or 'iTerm'",
+		"In the editor value change 'default' to 'nano', 'vi', or another terminal based editor.",
+		"Hosts will also be read from your ~/.ssh/config or /etc/ssh_config file, if available",
+		"For more information on how to configure, please see http://fitztrev.github.io/shuttle/"
+	],
+	"editor": "default",
+	"launch_at_login": true,
+	"terminal": "Terminal.app",
+	"iTerm_version": "nightly",
+	"default_theme": "Pro",
+	"open_in": "new",
+	"show_ssh_config_hosts": false,
+	"ssh_config_ignore_hosts": [  ],
+	"ssh_config_ignore_keywords": [  ],
+	"hosts": 
+	[
+		{
+			"name": "Copy Public Key",
+			"cmd": "cat ~/.ssh/id_rsa.pub | pbcopy"
+		},
+		{
+			"CODEAPPS": [
+				{
+					"Posesionclo": [
+						{
+							"name": "FortRabbit",
+							"cmd": "ssh wordpress-rrlo@deploy.us1.frbit.com"
+						},
+						{
+							"name": "Tail",
+							"cmd": "ssh wordpress-rrlo@log.us1.frbit.com tail"
+						}
+					]
+				},
+				{
+					"name": "CODEAPPS",
+					"cmd": "ssh codejmgk@198.54.116.178 -p21098"
+				},
+				{
+					"name": "Posesionclo",
+					"cmd": "ssh wordpress-rrlo@deploy.us1.frbit.com"
+				},
+				{
+					"name": "Invisible",
+					"cmd": "ssh inviszpj@68.65.120.204 -p21098"
+				},
+				{
+					"name": "1502",
+					"cmd": "ssh quintgdl@198.54.116.8 -p21098"
+				},
+				{
+					"name": "Vitral Studio",
+					"cmd": "ssh vitrivzk@199.188.200.49 -p21098"
+				},
+				{
+					"name": "TiendasYa",
+					"cmd": "ssh tienomym@199.188.200.109 -p21098"
+				}
+			]
+		},
+		{
+			"DAPPS": [
+				{
+					"name": "Wallet",
+					"cmd": "ssh codejmgk@198.54.116.178 -p21098"
+				}
+
+			]
+		}
+
+	]
+}
+

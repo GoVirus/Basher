@@ -4,6 +4,7 @@ pkg install -y git
 pkg install -y i3 i3status dmenu
 pkg install -y tmux
 pkg install -y htop bsdinfo
+setxkbmap -layout es -variant mac
 
 cat <<EOT>> /etc/rc.conf
 hald_enable="YES"
@@ -19,11 +20,10 @@ XTerm.vt100.locale: true
 EOT
 
 cat <<EOT>> /root/.xinitrc
-xsetroot -name "MR.DATA"
+xsetroot -name "DATA"
 xrdb -merge ~/.Xresources
 exec i3
 exec dmenu
-setxkbmap -layout es -variant mac
 EOT
 
 cat <<EOT>> /etc/profile
@@ -40,8 +40,3 @@ EOT
 pkg install -y zsh
 chsh -s zsh
 zsh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-
-pkg install python
-pkg install py27-pip
-
-# Alt i3 Button
