@@ -1,0 +1,1 @@
+dig -t NS website.com @cloudflarenameserver

@@ -1,75 +1,137 @@
 {
-	"_comments": [
-		"Valid terminals include: 'Terminal.app' or 'iTerm'",
-		"In the editor value change 'default' to 'nano', 'vi', or another terminal based editor.",
-		"Hosts will also be read from your ~/.ssh/config or /etc/ssh_config file, if available",
-		"For more information on how to configure, please see http://fitztrev.github.io/shuttle/"
-	],
-	"editor": "default",
-	"launch_at_login": true,
-	"terminal": "Terminal.app",
-	"iTerm_version": "nightly",
-	"default_theme": "Pro",
-	"open_in": "new",
-	"show_ssh_config_hosts": false,
-	"ssh_config_ignore_hosts": [  ],
-	"ssh_config_ignore_keywords": [  ],
-	"hosts": 
-	[
-		{
-			"name": "Copy Public Key",
-			"cmd": "cat ~/.ssh/id_rsa.pub | pbcopy"
-		},
-		{
-			"CODEAPPS": [
-				{
-					"Posesionclo": [
-						{
-							"name": "FortRabbit",
-							"cmd": "ssh wordpress-rrlo@deploy.us1.frbit.com"
-						},
-						{
-							"name": "Tail",
-							"cmd": "ssh wordpress-rrlo@log.us1.frbit.com tail"
-						}
-					]
-				},
-				{
-					"name": "CODEAPPS",
-					"cmd": "ssh codejmgk@198.54.116.178 -p21098"
-				},
-				{
-					"name": "Posesionclo",
-					"cmd": "ssh wordpress-rrlo@deploy.us1.frbit.com"
-				},
-				{
-					"name": "Invisible",
-					"cmd": "ssh inviszpj@68.65.120.204 -p21098"
-				},
-				{
-					"name": "1502",
-					"cmd": "ssh quintgdl@198.54.116.8 -p21098"
-				},
-				{
-					"name": "Vitral Studio",
-					"cmd": "ssh vitrivzk@199.188.200.49 -p21098"
-				},
-				{
-					"name": "TiendasYa",
-					"cmd": "ssh tienomym@199.188.200.109 -p21098"
-				}
-			]
-		},
-		{
-			"DAPPS": [
-				{
-					"name": "Wallet",
-					"cmd": "ssh codejmgk@198.54.116.178 -p21098"
-				}
+  "_comments": [
+    "Valid terminals include: 'Terminal.app' or 'iTerm'",
+    "In the editor value change 'default' to 'nano', 'vi', or another terminal based editor.",
+    "Hosts will also be read from your ~/.ssh/config or /etc/ssh_config file, if available",
+    "For more information on how to configure, please see http://fitztrev.github.io/shuttle/"
+  ],
+  "editor": "default",
+  "launch_at_login": true,
+  "terminal": "iTerm",
+  "iTerm_version": "nightly",
+  "default_theme": "Pro",
+  "open_in": "new",
+  "show_ssh_config_hosts": false,
+  "ssh_config_ignore_hosts": [  ],
+  "ssh_config_ignore_keywords": [  ],
+  "hosts": 
+  [
+    {
+      "name": "Copy Public Key",
+      "cmd": "cat ~/.ssh/id_rsa.pub | pbcopy"
+    },
+    {
+      "name": "iMac",
+      "cmd": "ssh data@192.168.1.51"
+    },
+    {
+      "CODEAPPS": [
+        {
+          "Amazon": [
+            {
+              "name": "Ubuntu",
+              "cmd": "ssh -i 'CODEAPPS.pem' ubuntu@ec2-34-227-157-91.compute-1.amazonaws.com"
+            }
+          ]
+        },
+        {
+          "Docker": [
+            {
+              "name": "Machine",
+              "cmd": "docker-machine ssh"
+            },
+            {
+              "name": "Kali Linux",
+              "cmd": "docker exec -it de3241e93b1b bash"
+            },
+            {
+              "name": "Ubuntu",
+              "cmd": "docker exec -it e411dc844d49 zsh"
 
-			]
-		}
+            },
+            {
+              "name": "Oracle Linux",
+              "cmd": "docker exec -it ab6a5a7bed67 bash"
 
-	]
+            }
+          ]
+        },
+        {
+          "Devices": [
+            {
+              "name": "Raspberry",
+              "cmd": "ssh data@192.168.1.62"
+            },
+            {
+              "name": "iMac",
+              "cmd": "ssh data@192.168.1.51"
+            },
+            {
+              "name": "LiteBeam M5",
+              "cmd": "ssh ubnt@192.168.1.1"
+            }
+          ]
+        },
+        {
+          "Posesionclo": [
+            {
+              "name": "FortRabbit",
+              "cmd": "ssh wordpress-rrlo@deploy.us1.frbit.com"
+            },
+            {
+              "name": "Tail",
+              "cmd": "ssh wordpress-rrlo@log.us1.frbit.com tail"
+            }
+          ]
+        },
+        {
+          "Krupp": [
+            {
+              "name": "WHM",
+              "cmd": "ssh root@192.188.204.80 -p21098"
+            },
+            {
+              "name": "Tail",
+              "cmd": "ssh root@192.188.204.80 -p21098 tail"
+            },
+            {
+              "name": "Cpanel",
+              "cmd": "ssh hans@192.188.204.80 -p21098 tail"
+            }
+          ]
+        },
+        {
+          "name": "CODEAPPS",
+          "cmd": "ssh codejmgk@198.54.116.178 -p21098"
+        },
+        {
+          "name": "Invisible",
+          "cmd": "ssh inviszpj@68.65.120.204 -p21098"
+        },
+        {
+          "name": "1502",
+          "cmd": "ssh quintgdl@198.54.116.8 -p21098"
+        },
+        {
+          "name": "Vitral Studio",
+          "cmd": "ssh vitrivzk@199.188.200.49 -p21098"
+        },
+        {
+          "name": "TiendasYa",
+          "cmd": "ssh tienomym@199.188.200.109 -p21098"
+        }
+      ]
+    },
+    {
+      "DAPPS": [
+        {
+          "name": "Wallet",
+          "cmd": "ssh codejmgk@198.54.116.178 -p21098"
+        }
+
+      ]
+    }
+
+  ]
 }
 
