@@ -1,0 +1,4 @@
+cd backup/wp-snapshots/tmp
+
+scp -P 22 wordpress-rrlo@deploy.us1.frbit.com:/srv/app/wordpress-rrlo/htdocs/posesion.tar.gz /Users/data/Downloads
+
